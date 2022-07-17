@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style -->
+    <style>
+      .dropdown-item:hover, #login:hover, #signup:hover{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.856);
+        /* filter: invert(1); */
+      }
+    </style>
+
+    <!-- Title and Logo -->
+    <title>Bootstrap Project</title>
+    <link rel="icon" type="image/x-icon"
+      href="https://daily-now-res.cloudinary.com/image/upload/v1614088267/landing/Daily.dev_logo.png">
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <a class="navbar-brand" href="#"><img style="border-radius: 50%;"
+          src="https://daily-now-res.cloudinary.com/image/upload/v1614088267/landing/Daily.dev_logo.png" alt="logo"
+          width="50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto font-weight-bold">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#react">React JS</a>
+              <a class="dropdown-item" href="#angular">Angular JS</a>
+              <a class="dropdown-item" href="#mongodb">MongoDB</a>
+              <a class="dropdown-item" href="#node">node.js</a>
+              <a class="dropdown-item" href="#java">Java Programming</a>
+              <a class="dropdown-item" href="#c++">C++</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <a href="#"><button  id="login" class="btn btn-light my-2 my-sm-2 mx-2"><i class="fa-solid fa-user-check"></i> | <b>Login</b></button></a>
+          <a href="#"><button id="signup" class="btn btn-light my-2 my-sm-2 mx-2"><i class="fa-solid fa-user-plus"></i> | <b>Sign Up</b></button</a>
+          </div>
+      </div>
+    </nav>
+
+
+    <!-- slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active"">
+          <img class=" d-block w-100" src="https://d1uxiwmpc9j4yg.cloudfront.net/images/all/shutter_1642603130.webp"
+          alt="First slide" height="500px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Development</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"
+            src="https://www.applify.com.sg/blog/wp-content/uploads/2022/03/A-pathway-that-UIUX-team-follows-before-designing-your-app.png"
+            alt="Second slide" height="500px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>UI/UX Design</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://www.mooc.org/hubfs/applications-of-computer-programming.jpg"
+            class="d-block w-100" alt="Third slide" height="500px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Programming</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- courses -->
+    <div class="container mt-5">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="react">
+            <img class="card-img-top"
+              src="https://s3.ap-southeast-1.amazonaws.com/arrowhitech.com/wp-content/uploads/2021/09/01031030/ReactJS.png"
+              alt="React JS" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>React JS</h5>
+              <p class="card-text">React is a free and open-source front-end JavaScript library for building user
+                interfaces based on UI components. It is maintained by Meta and a community of individual developers and
+                companies.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">6 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="angular">
+            <img class="card-img-top"
+              src="https://nareshit.com/wp-content/uploads/2018/08/angular-JS-online-training-nareshit.jpg"
+              alt="Angular JS" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>Angular JS</h5>
+              <p class="card-text">AngularJS was a JavaScript-based open-source front-end web framework for developing
+                single-page applications. It was maintained mainly by Google and a community of individuals and
+                corporations.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">4 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="mongodb">
+            <img class="card-img-top" src="https://miro.medium.com/max/1400/0*ip5VRsWQesmmI46u.png" alt="MongoDB"
+              style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>MongoDB</h5>
+              <p class="card-text">MongoDB is an open source cross-platform document-oriented database program.
+                Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">2 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="node">
+            <img class="card-img-top"
+              src="https://content.techgig.com/thumb/msid-81897164,width-460,resizemode-4/6-Top-benefits-of-Node-js-for-real-time-app-development.jpg?85666"
+              alt="node.js" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>node.js</h5>
+              <p class="card-text">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment
+                that runs on the Chrome's V8 engine and executes JavaScript code outside a web browser.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">2 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="java">
+            <img class="card-img-top" src="https://www.punto-informatico.it/app/uploads/2020/03/java-1060x424.jpg"
+              alt="Java Programming" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>Java Programming</h5>
+              <p class="card-text">Java is a open-source, cross-platform, high-level, class-based, object-oriented
+                programming language that is designed to have as few implementation dependencies as possible.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">12 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow" id="c++">
+            <img class="card-img-top"
+              src="https://images.idgesg.net/images/article/2020/01/sale_25561_primary_image_wide-100827989-large.jpg?auto=webp&quality=85,70"
+              alt="C++" style="height: 225px; width: 100%; display: block;">
+            <div class="card-body">
+              <h5>C++</h5>
+              <p class="card-text">C++ is a general-purpose programming language created by Danish computer scientist
+                Bjarne Stroustrup as an extension of the C programming language, or "C with Classes"</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-dark">Enroll Now</button>
+                </div>
+                <small class="text-muted">8 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- contact us -->
+    <div class="container mb-5">
+      <div class="container border border-danger rounded p-4">
+        <h2 class="mb-3"><i class="fa-solid fa-message" style="font-size: 25;"></i> Contact Us</h2>
+        <form id="contactus">
+          <div class="form-group">
+            <label for="InputEmail">Email address :</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+              placeholder="example@xyz.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="InputComment">Your message :</label>
+            <textarea class="form-control" id="InputComment" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-danger" onclick="alert('Message sent successfully.')">Send &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer about us -->
+    <footer class="mt-auto mb-0 w-100 h-25 bg-dark text-white">
+      <div class="container">
+        <p id="scrollToTopBtn" class="position-fixed" style="bottom: 1.2em; right: 3em;">
+          <button class="btn btn-danger rounded-circle"><i class="fa-solid fa-angle-up" style="font-size: 30;"></i></button>
+        </p>
+        <p class="m-0 pt-1" style="line-height: 1.8rem;">This template is © Lucifer.</p>
+        <p class="m-0 pb-1" style="line-height: 2rem;">But you can customize and use it for yourself !</p>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <!-- FAS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom script -->
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      const rootElement = document.documentElement;
+
+      function scrollToTop() {
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      const login = document.getElementById("login");
+      const signup = document.getElementById("signup");
+      function invertloginButton(){
+        login.style.filter = "invert(1)";
+      }
+      function invertsignupButton(){
+        signup.style.filter = "invert(1)";
+      }
+      // login.addEventListener("mouseover", invertloginButton);
+      // signup.addEventListener("mouseover", invertsignupButton);
+    </script>
+
+  </body>
+
+</html>
